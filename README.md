@@ -33,7 +33,7 @@ Run long task (neuaral network training, big computaion, file copying, scanning,
 
 for example lets
 ```
-ping -c4 www.starzplay.com
+ping -c4 google.com
 ```
 bot will reply you
 ```
@@ -50,10 +50,15 @@ getlog 3677
 bot reply
 
 ```
-PING www.starzplay.com (162.243.10.151) 56(84) bytes of data.
-64 bytes from 162.243.10.151: icmp_seq=1 ttl=50 time=151 ms
-64 bytes from 162.243.10.151: icmp_seq=2 ttl=50 time=151 ms
-64 bytes from 162.243.10.151: icmp_seq=3 ttl=50 time=151 ms
+PING google.com (74.125.193.101) 56(84) bytes of data.
+64 bytes from ig-in-f101.1e100.net (74.125.193.101): icmp_seq=1 ttl=43 time=0.595 ms
+64 bytes from ig-in-f101.1e100.net (74.125.193.101): icmp_seq=2 ttl=43 time=0.596 ms
+64 bytes from ig-in-f101.1e100.net (74.125.193.101): icmp_seq=3 ttl=43 time=0.623 ms
+64 bytes from ig-in-f101.1e100.net (74.125.193.101): icmp_seq=4 ttl=43 time=0.587 ms
+^C
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 2999ms
+rtt min/avg/max/mdev = 0.587/0.600/0.623/0.022 ms
 ```
 
 to get last 1000 bytes from log pass it to `getlog`
@@ -62,7 +67,7 @@ getlog 3677 1000
 ```
 if you task was stppoed or killed (`@host_bot bash kill -9 3677`) bot will alert by metioning *@channel*
 ```
-@jinn_bot replied to a thread: @jinn_bot ping googe.com (attached log file)
+@jinn_bot replied to a thread: @jinn_bot ping google.com (attached log file)
 @channel
 3677 exited with: -9
 ```
